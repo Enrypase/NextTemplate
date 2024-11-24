@@ -1,0 +1,25 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": [
+    "react",
+    "unicorn",
+    "typescript",
+    "oxc",
+    "import",
+    "jsx_a11y",
+    "nextjs",
+    "react-perf",
+    "promise",
+    "security"
+  ],
+  "categories": {
+    "correctness": "error",
+    "perf": "error",
+    "suspicious": "warn",
+    "style": "warn"
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "eslint/no-ternary": "off"
+  }
+}

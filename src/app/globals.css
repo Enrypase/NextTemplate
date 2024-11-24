@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black: rgb(0, 0, 0);
+}
+
+h1 {
+  @apply text-7xl;
+}
+h2 {
+  @apply text-6xl;
+}
+h3 {
+  @apply text-5xl;
+}
+h4 {
+  @apply text-2xl;
+}
+h5 {
+  @apply text-2xl;
+}
+h6 {
+  @apply text-xl;
+}
+p {
+  @apply text-lg;
+}
+small {
+  @apply text-xs;
+}
+
+.fade-in {
+  transition: all 1s linear;
+  transition-delay: 1s;
+  opacity: 1;
+  transform: translateY(0);
+  @starting-style {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}

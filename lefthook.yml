@@ -1,0 +1,17 @@
+pre-commit:
+  parallel: true
+  commands:
+    format:
+      run: yarn format
+    lint:
+      run: yarn lint
+
+pre-push:
+  commands:
+    build:
+      run: yarn build
+
+commit-msg:
+  commands:
+    commitlint:
+      run: npx commitlint --edit "$1"

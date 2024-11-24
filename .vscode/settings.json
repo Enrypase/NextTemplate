@@ -1,0 +1,16 @@
+{
+  "oxc.path.server": "./node_modules/.bin/oxlint",
+  "oxc.trace.server": "verbose",
+  "oxc.enable": true,
+  "oxc.configPath": "oxlint.json",
+  "oxc.lint.run": "onType",
+  "eslint.options": {
+    "overrideConfigFile": "./eslint.config.js"
+  },
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.oxlint": "always"
+  }
+}

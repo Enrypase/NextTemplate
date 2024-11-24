@@ -1,0 +1,48 @@
+{
+  "name": "next_template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "npx oxlint -c oxlint.json --tsconfig tsconfig.json --fix && next lint",
+    "lint-debug": "npx oxlint -c oxlint.json --tsconfig tsconfig.json --print-config",
+    "format": "npx prettier --write ."
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.60.5",
+    "axios": "^1.7.7",
+    "drizzle-kit": "^0.28.1",
+    "next": "15.0.3",
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@next/eslint-plugin-next": "^15.0.3",
+    "@types/eslint": "^9.6.1",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^9.15.0",
+    "eslint-config-next": "^15.0.3",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-oxlint": "^0.11.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-typescript": "^0.14.0",
+    "eslint-plugin-unicorn": "^56.0.0",
+    "lefthook": "^1.8.2",
+    "oxlint": "^0.11.1",
+    "postcss": "^8",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.6.3"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0",
+    "yarn": ">=1.22.0"
+  }
+}
