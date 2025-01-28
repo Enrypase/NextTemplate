@@ -1,14 +1,13 @@
 "use client";
 
-import { useCallback } from "react";
+import { signIn } from "next-auth/react";
+import Image from "next/image";
 
-export default function Button(props: { text: string }) {
-  const handleOnClick = useCallback(() => {
-    console.log("click");
-  }, []);
+export function GoogleSignIn() {
   return (
-    <button className="p-2 rounded-xl bg-white text-black text-xl" onClick={handleOnClick}>
-      {props.text}
+    <button className={`text-black bg-white`} onClick={() => signIn("google")}>
+      <p>Sign in with Google</p>
+      <Image src="/icons/google.svg" alt="Google" width={24} height={24} />
     </button>
   );
 }
