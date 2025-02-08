@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "npx oxlint -c oxlint.json --tsconfig tsconfig.json --fix && next lint",
+    "lint": "npx oxlint -c oxlint.json --tsconfig tsconfig.json && next lint",
     "lint-debug": "npx oxlint -c oxlint.json --tsconfig tsconfig.json --print-config",
     "format": "npx prettier --write ."
   },
